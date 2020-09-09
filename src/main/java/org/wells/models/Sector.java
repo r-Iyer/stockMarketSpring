@@ -18,7 +18,7 @@ public class Sector {
     @Column(nullable = false)
     private String sectorName;
     private String brief;
-    @OneToMany(mappedBy = "sector", fetch = FetchType.LAZY) //changed
+    @OneToMany(mappedBy = "sector", fetch = FetchType.LAZY) //changed here
     @JsonIgnore
     private List<Company> companies;
 
